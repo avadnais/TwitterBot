@@ -52,7 +52,7 @@ while True:
         
     i = random.randint(1,3)
     
-    if i % 3 == 0:
+    if i == 1:
         if len(wisquotes) == 0:
             wisquotes = os.path.join(dirname, 'quotes.txt').split("\r\n\r\n")
             print "~~~~~~ ALL WISDOM QUOTES TWEETED ~~~~~~"
@@ -60,7 +60,7 @@ while True:
         #wisquotesdata.replace(quote, "")
         #wisquotesfile.write(wisquotesdata)
           
-    elif i % 3 == 1:
+    elif i ==2:
         if len(officequotes) == 0:
             officequotes = open(officequotesfile, "r").read().split("\n\n")
             print "~~~~~~ ALL OFFICE QUOTES TWEETED ~~~~~~"
